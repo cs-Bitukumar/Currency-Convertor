@@ -1,2 +1,2 @@
 # Currency-Convertor
- 💱 Currency Converter Web App 🌐 This is a responsive and easy-to-use Currency Converter web application that allows users to convert amounts between different currencies using real-time exchange rates fetched from an API.  
+ A simple and responsive Currency Converter app using HTML, CSS, and JavaScript. It fetches real-time exchange rates via API and shows country flags with currency names. Ideal for quick conversions while traveling or shopping.  
