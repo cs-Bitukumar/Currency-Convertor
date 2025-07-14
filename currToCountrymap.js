@@ -1,3 +1,4 @@
+
 // ------------------- Currency to Country Map -------------------
 const currencyToCountryName = {
   AED: "United Arab Emirates",
@@ -146,3 +147,5 @@ form.addEventListener("submit", async (e) => {
     msg.innerText = "Error: " + error.message;
   }
 });
+
+

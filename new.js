@@ -1,3 +1,4 @@
+
 const BASE_URL = "https://latest.currency-api.pages.dev/v1/currencies";
 
 
@@ -76,3 +77,4 @@ btn.addEventListener("click", function (evt) {
 window.addEventListener("load", function () {
   updateExchangeRate();
 });
+
