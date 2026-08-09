@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>State Land Converter</title>
+    <link rel="stylesheet" href="state-land-converter.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="container">
+       <div class="logo">
+          <img src="assets/logo.png" alt="" height="50px" width="50px">
+          <h2>Welcome </h2>
+          <p style="font-size: 20px;">To</p>
+          <h2>State Land Converter</h2>
+       </div>
+    
+      
+      <form>
+          <div class="state-selection">
+             <p>Select State</p>
+             <div class="bitu" style="margin-top: 0.5rem;">
+                <span id="state-code" aria-label="State code" style="display: inline-flex; align-items: center; justify-content: center; width: 5rem; height: 2.8rem; margin-right: 0.35rem; border-radius: 0.35rem; background: #e6f2ff; color: #075985; font-weight: bold;"></span>
+                <select name="state" id="state" style="height: 2.8rem; font-size: 16px;"></select>
+             </div>
+          </div>
+          <div class="amount">
+             <p>Enter Number</p>
+             <input type="number" value="" style="margin-top: 0.5rem;" placeholder="Enter Number" >
+           </div>
+           <div class="drop-down">
+              <div class="select-container">
+                  <div class="from">                     
+                      <p>From</p>
+                      <div class="bitu">
+                      <select name="from" id="from-unit">
+                      </select></div>
+                   </div>
+               </div>
+  
+               <i class="fa-solid fa-arrow-right-arrow-left"></i>
+  
+              <div class="select-container">
+                  <div class="to">
+                      <p>To</p>
+                      <div class="bitu">
+                      <select name="to" id="to-unit">
+                      </select></div>
+                  </div>
+              </div>
+          
+          </div>
+      
+           <div class="msg"></div>
+           <button>Convert Land </button><br>
+           <span class="span">
+             Select a state and its 2-letter state code will be shown.
+              <a href="index.html" style="text-decoration: none; color: #007BFF;">
+                  Click here
+              </a>
+              to find out!
+           </span>
+           <!-- <div class="coin">
+              <a href="" class="coin">Get Coin Convertor</a>
+           </div> -->
+           
+
+        </form>
+   </div>
+   <script src="state-land-converter.js"></script>
+   
+</body>
+

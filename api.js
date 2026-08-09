@@ -247,3 +247,33 @@ const countryList = {
   ZAR: "South Africa"
 };
 
+// const STATE_CONVERSION_RATES = {
+//   "bihar": { hectareFactor: 0.250, unitName: "Bigha" },
+ // "uttar pradesh": { hectareFactor: 0.253, unitName: "Bigha" },
+  // "rajasthan": { hectareFactor: 0.250, unitName: "Bigha" },
+  // "madhya pradesh": { hectareFactor: 0.133, unitName: "Bigha" },
+  // "punjab": { hectareFactor: 0.101, unitName: "Bigha" },
+  // "haryana": { hectareFactor: 0.101, unitName: "Bigha" },
+  // "west bengal": { hectareFactor: 0.1338, unitName: "Bigha" },
+  // "assam": { hectareFactor: 0.1338, unitName: "Bigha" },
+  // "himachal pradesh": { hectareFactor: 0.0809, unitName: "Bigha" },
+  // "uttarakhand": { hectareFactor: 0.0809, unitName: "Bigha" },
+  // "gujarat": { hectareFactor: 0.161, unitName: "Bigha" },
+  // "maharashtra": { hectareFactor: 0.250, unitName: "Bigha" },
+  // "jharkhand": { hectareFactor: 0.250, unitName: "Bigha" },
+  // "odisha": { hectareFactor: 0.250, unitName: "Bigha" },
+  // "tripura": { hectareFactor: 0.1338, unitName: "Bigha" },
+  // "chhattisgarh": { hectareFactor: 0.133, unitName: "Bigha" },
+  // "sikkim": { hectareFactor: 0.1338, unitName: "Bigha" },
+//  "jammu and kashmir": { hectareFactor: 0.0505, unitName: "Kanal" },
+//   "goa": { hectareFactor: 0.0101, unitName: "Guntha" },
+//   "karnataka": { hectareFactor: 0.0101, unitName: "Guntha" },
+//   "tamil nadu": { hectareFactor: 0.0223, unitName: "Ground" },
+//   "andhra pradesh": { hectareFactor: 0.0040, unitName: "Cent" },
+//   "telangana": { hectareFactor: 0.0101, unitName: "Guntha" },
+//   "kerala": { hectareFactor: 0.0040, unitName: "Cent" },
+//   "meghalaya": { hectareFactor: 0.1338, unitName: "Bigha / Acre" },
+//   "manipur": { hectareFactor: 0.1338, unitName: "Bigha / Acre" },
+//   "mizoram": { hectareFactor: 0.1338, unitName: "Bigha / Acre" },
+//   "nagaland": { hectareFactor: 0.1338, unitName: "Bigha / Acre" }
+// };
