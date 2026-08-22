@@ -12,10 +12,52 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  padding-top: 48px;
+  box-sizing: border-box;
   background: linear-gradient(-45deg, #e89b9b, #dcdc8f, #9ddb9d);
   background-size: 400% 400%;
   animation: bitu 10s ease infinite;
   font-family: Arial, sans-serif;
+}
+
+/* Full-width moving portfolio link */
+.moving-link-bar {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 42px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background: #172554;
+  white-space: nowrap;
+}
+
+.moving-link {
+  display: inline-block;
+  padding-left: 100%;
+  color: #bfdbfe;
+  font-weight: bold;
+  text-decoration: none;
+  animation: move-link 16s linear infinite;
+}
+
+.moving-link:hover,
+.moving-link:focus-visible {
+  color: #fff;
+  text-decoration: underline;
+  animation-play-state: paused;
+}
+
+@keyframes move-link {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .moving-link { padding-left: 0; animation: none; margin: auto; }
 }
 
 /* Background animation */
@@ -349,4 +391,3 @@ form select:focus {
     transform: rotate(90deg);
   }
 } */
-
