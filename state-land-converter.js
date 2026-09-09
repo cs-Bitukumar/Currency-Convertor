@@ -81,3 +81,24 @@ formButton.addEventListener("click", event => {
 });
 
 updateConversion();
+
+const sumNumbersInput = document.querySelector("#sum-numbers");
+const sumResult = document.querySelector("#sum-result");
+const calculateSumButton = document.querySelector("#calculate-sum");
+const clearSumButton = document.querySelector("#clear-sum");
+
+function calculateSum() {
+  const values = sumNumbersInput.value
+    .split(/[\s,]+/)
+    .map(value => Number(value))
+    .filter(value => Number.isFinite(value));
+  const total = values.reduce((sum, value) => sum + value, 0);
+  sumResult.textContent = `Sum = ${Number(total.toFixed(2))}`;
+}
+
+calculateSumButton.addEventListener("click", calculateSum);
+clearSumButton.addEventListener("click", () => {
+  sumNumbersInput.value = "";
+  sumResult.textContent = "Sum = 0";
+  sumNumbersInput.focus();
+});

@@ -25,11 +25,12 @@ body{
 }
 
 .container{
-    background-color: rgb(235, 227, 227);
+    background-color: transparent;
     padding: 2rem;
     border-radius: 10px;
     min-height: 60vh;
-    /* width: 40vw; */
+    width: min(92vw, 72rem);
+    box-sizing: border-box;
 }
 .container .logo{
   display: flex;
@@ -161,4 +162,136 @@ form input{
   font-weight: bold;
   font-size: 1.2rem;
   text-align: center;
+}
+
+.tools-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.tools-row form,
+.land-panel,
+.sum-calculator {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.land-panel {
+  max-width: 34rem;
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: rgb(235, 227, 227);
+  min-height: 60vh;
+  box-sizing: border-box;
+}
+
+.land-panel form {
+  width: 100%;
+  max-width: 34rem;
+}
+
+.sum-calculator {
+  width: 100%;
+  max-width: 28rem;
+  margin: 0 auto;
+  padding: 0.35rem;
+  border: 1px solid #999;
+  border-radius: 0.35rem;
+  background: #f1f1f1;
+  box-sizing: border-box;
+  color: #181818;
+}
+
+.sum-calculator h2 {
+  margin: 0 0 1.25rem;
+  padding: 0.35rem 0.2rem 0.55rem;
+  border-bottom: 2px solid #b94e3a;
+  background: transparent;
+  color: #b94e3a;
+  font-size: 1.25rem;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.sum-calculator label {
+  display: block;
+  margin-bottom: 1.2rem;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+#sum-numbers {
+  display: block;
+  width: calc(100% - 7rem);
+  min-height: 7rem;
+  margin: 0 auto 1.5rem;
+  padding: 0.35rem;
+  box-sizing: border-box;
+  border: 1px solid #777;
+  border-radius: 0.15rem;
+  resize: vertical;
+  font: 1.15rem Arial, sans-serif;
+}
+
+.sum-actions {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 01.5rem;
+  padding: 0 0.35rem 0.6rem;
+}
+
+.sum-actions button {
+  width: auto;
+  min-width: 7.6rem;
+  margin: 0;
+  padding: 0.55rem 1.15rem;
+  border: 1px solid #aaa;
+  border-radius: 0.35rem;
+  background: linear-gradient(135deg, #e53232, #399e97);
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.sum-actions button:hover {
+  opacity: 0.9;
+}
+
+.sum-answer {
+  min-height: 8.4rem;
+  margin-top: 0.15rem;
+  border: 1px solid #aaa;
+  border-radius: 0.35rem;
+  background: white;
+  font-size: 1.25rem;
+}
+
+.sum-answer > span {
+  display: block;
+  padding: 0.35rem;
+}
+
+#sum-result {
+  margin: 2.4rem 0 0;
+  text-align: center;
+  color: #444;
+}
+
+@media (max-width: 600px) {
+  .tools-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .tools-row form,
+  .land-panel,
+  .sum-calculator {
+    max-width: none;
+  }
+
+  #sum-numbers {
+    width: calc(100% - 2rem);
+  }
 }

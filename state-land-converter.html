@@ -12,14 +12,15 @@
 </head>
 <body>
     <div class="container">
+      <div class="tools-row">
+      <section class="land-panel">
        <div class="logo">
           <img src="assets/logo.png" alt="" height="50px" width="50px">
           <h2>Welcome </h2>
           <p style="font-size: 20px;">To</p>
           <h2>State Land Converter</h2>
-       </div>
+      </div>
     
-      
       <form>
           <div class="state-selection">
              <p>Select State</p>
@@ -69,7 +70,23 @@
            </div> -->
            
 
-        </form>
+      </form>
+      </section>
+
+      <section class="sum-calculator" aria-labelledby="sum-calculator-title">
+        <h2 id="sum-calculator-title">Sum Calculator</h2>
+        <label for="sum-numbers">Enter Numbers</label>
+        <textarea id="sum-numbers" rows="4" placeholder="37.5, 40, 42, 47, 53, 54, 59, 65, 66.25"></textarea>
+        <div class="sum-actions">
+          <button type="button" id="clear-sum">Clear</button>
+          <button type="button" id="calculate-sum">Calculate</button>
+        </div>
+        <div class="sum-answer" aria-live="polite">
+          <span>Answer:</span>
+          <p id="sum-result">Sum = 0</p>
+        </div>
+      </section>
+      </div>
    </div>
    <script src="state-land-converter.js"></script>
    
